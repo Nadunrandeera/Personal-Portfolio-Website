@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "motion/react";
-import profileImage from "../../assets/Hero_Image.png";
+import profileImage from "../../assets/Hero_image.png";
 
 export function Hero() {
   return (
@@ -45,7 +45,7 @@ export function Hero() {
                 </p>
                 <div className="flex gap-3">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/Nadunrandeera"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-14 h-14 bg-[#1a1a1a] hover:bg-[#ff014f] rounded-lg flex items-center justify-center transition-all duration-300 shadow-lg group border border-gray-800 hover:border-[#ff014f]"
@@ -56,7 +56,7 @@ export function Hero() {
                     />
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/nadunrandeera/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-14 h-14 bg-[#1a1a1a] hover:bg-[#ff014f] rounded-lg flex items-center justify-center transition-all duration-300 shadow-lg group border border-gray-800 hover:border-[#ff014f]"
@@ -67,7 +67,7 @@ export function Hero() {
                     />
                   </a>
                   <a
-                    href="mailto:contact@example.com"
+                    href="nadunrandeera@gmail.com"
                     className="w-14 h-14 bg-[#1a1a1a] hover:bg-[#ff014f] rounded-lg flex items-center justify-center transition-all duration-300 shadow-lg group border border-gray-800 hover:border-[#ff014f]"
                   >
                     <Mail
