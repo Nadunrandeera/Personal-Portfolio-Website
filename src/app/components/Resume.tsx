@@ -1,34 +1,38 @@
-import { GraduationCap, Briefcase, Download } from 'lucide-react';
-import { motion } from 'motion/react';
+import cvFile from "@/assets/Nadun Randeera-CV.pdf";
+import { Briefcase, Download, GraduationCap } from "lucide-react";
+import { motion } from "motion/react";
 
 export function Resume() {
   const education = [
     {
-      degree: 'Bachelor of ICT',
-      institution: 'University of Jaffna',
-      period: '2022 - Present',
-      description: 'Faculty of Technological Studies, Department of ICT. Focusing on web technologies and software engineering.',
+      degree: "Bachelor of ICT",
+      institution: "University of Jaffna",
+      period: "2022 - Present",
+      description:
+        "Faculty of Technological Studies, Department of ICT. Focusing on web technologies and software engineering.",
     },
     {
-      degree: 'Advanced Level',
-      institution: 'Technology Stream',
-      period: '2017 - 2019',
-      description: 'Completed A/L examination in Technology Stream',
+      degree: "Advanced Level",
+      institution: "Technology Stream",
+      period: "2017 - 2019",
+      description: "Completed A/L examination in Technology Stream",
     },
   ];
 
   const experience = [
     {
-      position: 'Full Stack Developer Intern',
-      company: 'Tech Solutions Inc.',
-      period: 'Jan 2025 - Present',
-      description: 'Working on modern web applications using React, Node.js, and cloud technologies.',
+      position: "Full Stack Developer Intern",
+      company: "Tech Solutions Inc.",
+      period: "Jan 2025 - Present",
+      description:
+        "Working on modern web applications using React, Node.js, and cloud technologies.",
     },
     {
-      position: 'Frontend Developer',
-      company: 'Freelance',
-      period: '2023 - Present',
-      description: 'Developed responsive websites and web applications for various clients using React,Node.js and Spring Boot.',
+      position: "Frontend Developer",
+      company: "Freelance",
+      period: "2023 - Present",
+      description:
+        "Developed responsive websites and web applications for various clients using React,Node.js and Spring Boot.",
     },
     // {
     //   position: 'UI/UX Designer',
@@ -39,14 +43,14 @@ export function Resume() {
   ];
 
   const skills = [
-    { name: 'React.js', level: 90 },
-    { name: 'TypeScript / JavaScript', level: 85 },
-    { name: 'Node.js / Express', level: 60 },
-    { name: 'Spring Boot / Java', level: 70 },
-    { name: 'ASP .NET Core', level: 50 },
-    { name: 'MongoDB / MySQL', level: 75 },
-    { name: 'Tailwind CSS', level: 90 },
-    { name: 'UI/UX Design (Figma)', level: 70 },
+    { name: "React.js", level: 90 },
+    { name: "TypeScript / JavaScript", level: 85 },
+    { name: "Node.js / Express", level: 60 },
+    { name: "Spring Boot / Java", level: 70 },
+    { name: "ASP .NET Core", level: 50 },
+    { name: "MongoDB / MySQL", level: 75 },
+    { name: "Tailwind CSS", level: 90 },
+    { name: "UI/UX Design (Figma)", level: 70 },
   ];
 
   return (
@@ -59,17 +63,23 @@ export function Resume() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-[#ff014f] text-xs font-medium mb-4 tracking-widest uppercase">MY JOURNEY</p>
+          <p className="text-[#ff014f] text-xs font-medium mb-4 tracking-widest uppercase">
+            MY JOURNEY
+          </p>
           <h2 className="text-4xl md:text-5xl text-white mb-4">
             Resume & <span className="text-[#ff014f]">Experience</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
             My educational background and professional experience
           </p>
-          <button className="px-8 py-3 bg-[#ff014f] text-white rounded-lg hover:shadow-lg hover:shadow-[#ff014f]/50 transition-all duration-300 flex items-center gap-2 mx-auto">
+          <a
+            href={cvFile}
+            download="Nadun Randeera-CV.pdf"
+            className="px-8 py-3 bg-[#ff014f] text-white rounded-lg hover:shadow-lg hover:shadow-[#ff014f]/50 transition-all duration-300 flex items-center gap-2 mx-auto inline-flex"
+          >
             <Download size={18} />
             Download Resume
-          </button>
+          </a>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
@@ -95,8 +105,12 @@ export function Resume() {
                   <div className="absolute left-0 top-0 w-4 h-4 bg-[#ff014f] rounded-full -translate-x-[9px]"></div>
                   <div className="bg-[#1a1a1a] rounded-xl p-6 border border-gray-800 hover:border-[#ff014f] transition-all duration-300">
                     <span className="text-[#ff014f] text-sm">{edu.period}</span>
-                    <h4 className="text-xl text-white mt-2 mb-1">{edu.degree}</h4>
-                    <p className="text-gray-300 text-sm mb-2">{edu.institution}</p>
+                    <h4 className="text-xl text-white mt-2 mb-1">
+                      {edu.degree}
+                    </h4>
+                    <p className="text-gray-300 text-sm mb-2">
+                      {edu.institution}
+                    </p>
                     <p className="text-gray-400 text-sm">{edu.description}</p>
                   </div>
                 </div>
@@ -126,7 +140,9 @@ export function Resume() {
                   <div className="absolute left-0 top-0 w-4 h-4 bg-blue-600 rounded-full -translate-x-[9px]"></div>
                   <div className="bg-[#1a1a1a] rounded-xl p-6 border border-gray-800 hover:border-[#ff014f] transition-all duration-300">
                     <span className="text-blue-400 text-sm">{exp.period}</span>
-                    <h4 className="text-xl text-white mt-2 mb-1">{exp.position}</h4>
+                    <h4 className="text-xl text-white mt-2 mb-1">
+                      {exp.position}
+                    </h4>
                     <p className="text-gray-300 text-sm mb-2">{exp.company}</p>
                     <p className="text-gray-400 text-sm">{exp.description}</p>
                   </div>
@@ -143,7 +159,9 @@ export function Resume() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl text-white mb-8 text-center">Technical Skills</h3>
+          <h3 className="text-2xl text-white mb-8 text-center">
+            Technical Skills
+          </h3>
           <div className="grid md:grid-cols-2 gap-6">
             {skills.map((skill, index) => (
               <div key={skill.name} className="space-y-2">
