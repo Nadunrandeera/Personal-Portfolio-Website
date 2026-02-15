@@ -20,13 +20,13 @@ export function Resume() {
   ];
 
   const experience = [
-    {
-      position: "Full Stack Developer Intern",
-      company: "Tech Solutions Inc.",
-      period: "Jan 2025 - Present",
-      description:
-        "Working on modern web applications using React, Node.js, and cloud technologies.",
-    },
+    // {
+    //   position: "Full Stack Developer Intern",
+    //   company: "Tech Solutions Inc.",
+    //   period: "Jan 2025 - Present",
+    //   description:
+    //     "Working on modern web applications using React, Node.js, and cloud technologies.",
+    // },
     {
       position: "Frontend Developer",
       company: "Freelance",
