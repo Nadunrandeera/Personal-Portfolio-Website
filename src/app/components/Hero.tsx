@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "motion/react";
-import profileImage from "../../assets/Hero_image.png";
+import profileImage from "../../assets/My_DP.png";
 
 export function Hero() {
   return (
