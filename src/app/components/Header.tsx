@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import profileImage from "../../assets/Hero_Image.png";
+import profileImage from "../../assets/Hero_image.png";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
